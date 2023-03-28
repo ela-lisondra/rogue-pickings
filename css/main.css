@@ -1,0 +1,89 @@
+/******** GLOBAL STYLES ********/
+body {}
+
+h1,
+h2,
+h3,
+h4 {}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+p {}
+
+.content-wrapper {
+    width: 1200px;
+    /* this rule sets the bottom and top margin at 0. The auto value will make the browser automatically calculate an even amount of margin on left and right of the content. */
+    margin: 0 auto;
+    /* the overflow rule will make it so the containers holding floating elements will expand to fit their height */
+    overflow: auto;
+}
+
+/******** HEADER STYLES ********/
+header h1 {
+    outline: 3px dotted red;
+    width: 300px;
+    float: left;
+
+}
+
+header h1 span {}
+
+header nav {
+    outline: 3px dotted red;
+    width: 300px;
+    float: right;
+
+}
+
+header nav ul {}
+
+header nav ul li {}
+
+header nav ul li a {}
+
+/********  MAIN STYLES ********/
+/******** TOP SECTION ********/
+.main-image img {}
+
+.main-title h2 {}
+
+/******** BOTTOM SECTION ********/
+.bottom-section .content-wrapper {}
+
+.section-one,
+.section-two,
+.section-three {
+    outline: 3px dotted red;
+    /* box-sizing property set to border-box value ensires that all 3 columns keep their width, even if padding and borders are added */
+    box-sizing: border-box;
+    float:left;
+}
+
+.section-one {
+    width: 350px;
+}
+
+.section-two {
+    width: 500px;
+}
+
+.section-three {
+    width: 350px;
+}
+
+.bottom-section h3 {}
+
+.menu-list {}
+
+.menu-list li {}
+
+/******** FOOTER STYLES ********/
+footer {}
+
+footer span {}

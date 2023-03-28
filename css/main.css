@@ -1,20 +1,37 @@
 /******** GLOBAL STYLES ********/
-body {}
+body {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
 
 h1,
 h2,
 h3,
-h4 {}
+h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
-h1 {}
+h1 {
+    font-size: 30px;
+}
 
-h2 {}
+h2 {
+    font-size: 24px;
+}
 
-h3 {}
+h3 {
+    font-size: 20px;
+}
 
-h4 {}
+h4 {
+    font-size: 12px;
+}
 
-p {}
+p {
+    line-height: 36px;
+}
 
 .content-wrapper {
     width: 1200px;
@@ -26,43 +43,75 @@ p {}
 
 /******** HEADER STYLES ********/
 header h1 {
-    outline: 3px dotted red;
+    /* outline: 3px dotted red; */
     width: 300px;
     float: left;
+    /* Removing the default margin, AKA “zeroing out” or “resetting” the margin, allows you to add the padding or margin value shown in the design comp without subtracting the margin added by the browser. */
+    margin: 0;
+    padding: 36px 0;
 
 }
 
-header h1 span {}
+header h1 span {
+    color: #45610E;
+}
 
 header nav {
-    outline: 3px dotted red;
+    /* outline: 3px dotted red; */
     width: 300px;
     float: right;
+    padding: 44px 0;
 
 }
 
-header nav ul {}
+header nav ul {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    
+}
 
-header nav ul li {}
+header nav ul li {
+    /* to turn a vertical list to horizontal */
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #45610E;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
 
-header nav ul li a {}
+header nav ul li a {
+    text-decoration: none;
+    color:#45610E;
+}
 
 /********  MAIN STYLES ********/
 /******** TOP SECTION ********/
-.main-image img {}
+.main-image img {
+    border-top:3px solid #77a466;
+    border-bottom:3px solid #77a466;
+}
 
-.main-title h2 {}
+.main-title h2 {
+    color:#45610E;
+    padding: 5px 0;
+}
 
 /******** BOTTOM SECTION ********/
-.bottom-section .content-wrapper {}
+.bottom-section .content-wrapper {
+    border-top:5px solid #EEE;
+    border-bottom:5px solid #EEE;
+}
 
 .section-one,
 .section-two,
 .section-three {
-    outline: 3px dotted red;
+    /* outline: 3px dotted red; */
     /* box-sizing property set to border-box value ensires that all 3 columns keep their width, even if padding and borders are added */
     box-sizing: border-box;
     float:left;
+    padding: 0 40px;
 }
 
 .section-one {
@@ -71,19 +120,36 @@ header nav ul li a {}
 
 .section-two {
     width: 500px;
+    border-left:5px solid #EEE;
+    border-right:5px solid #EEE;
 }
 
 .section-three {
     width: 350px;
 }
 
-.bottom-section h3 {}
+.bottom-section h3 {
+    margin: 30px 0;
+}
 
-.menu-list {}
+.menu-list {
+    padding-left: 0;
+    list-style: none;
+}
 
-.menu-list li {}
+.menu-list li {
+    color: #45610E;
+    line-height: 36px;
+}
 
 /******** FOOTER STYLES ********/
-footer {}
+footer {
+    text-align: center;
+    margin-top: 8px;
+}
 
-footer span {}
+footer span {
+    font-family: "Galada", cursive;
+    text-transform: lowercase;
+    color: #45610E;
+}
